@@ -1,0 +1,28 @@
+{
+    "configurations": [
+        {
+            "type": "lldb",
+            "request": "launch",
+            "sourceLanguages": [
+                "swift"
+            ],
+            "args": [],
+            "cwd": "${workspaceFolder:FlyingFoxCLI}",
+            "name": "Debug flyingfox",
+            "program": "${workspaceFolder:FlyingFoxCLI}/.build/debug/flyingfox",
+            "preLaunchTask": "swift: Build Debug flyingfox"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "sourceLanguages": [
+                "swift"
+            ],
+            "args": [],
+            "cwd": "${workspaceFolder:FlyingFoxCLI}",
+            "name": "Release flyingfox",
+            "program": "${workspaceFolder:FlyingFoxCLI}/.build/release/flyingfox",
+            "preLaunchTask": "swift: Build Release flyingfox"
+        }
+    ]
+}
